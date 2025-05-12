@@ -28,7 +28,7 @@ const TarotCard: React.FC<TarotCardProps> = ({
     const isMobile = window.innerWidth <= 768;
     
     // Ângulo total do arco (em graus)
-    const arcAngle = isMobile ? 40 : 60;
+    const arcAngle = isMobile ? 35 : 60;
     
     // Converter para radianos
     const angleInRadians = (arcAngle * Math.PI) / 180;
@@ -37,10 +37,10 @@ const TarotCard: React.FC<TarotCardProps> = ({
     const cardAngle = (index / (total - 1) - 0.5) * angleInRadians;
     
     // Raio do arco - ajustado para mobile
-    const radius = isMobile ? 350 : 600;
+    const radius = isMobile ? 380 : 600;
     
     // Ajuste vertical para mobile
-    const verticalOffset = isMobile ? 120 : 0;
+    const verticalOffset = isMobile ? 140 : 0;
     
     // Calcular posições X e Y usando funções trigonométricas
     const x = Math.sin(cardAngle) * radius;

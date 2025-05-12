@@ -15,8 +15,8 @@
 
 @media (max-width: 768px) {
   :root {
-    --card-width: 80px;
-    --card-height: 136px;
+    --card-width: 75px;
+    --card-height: 128px;
   }
 }
 
@@ -165,8 +165,8 @@ body {
 
 @media (max-width: 768px) {
   .tarot-deck {
-    height: 80vh;
-    margin-top: -10vh;
+    height: 85vh;
+    margin-top: -15vh;
   }
 }
 
