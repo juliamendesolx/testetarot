@@ -37,10 +37,10 @@ const TarotCard: React.FC<TarotCardProps> = ({
     const cardAngle = (index / (total - 1) - 0.5) * angleInRadians;
     
     // Raio do arco - ajustado para mobile
-    const radius = isMobile ? 380 : 600;
+    const radius = isMobile ? 300 : 600;
     
     // Ajuste vertical para mobile
-    const verticalOffset = isMobile ? 140 : 0;
+    const verticalOffset = isMobile ? 50 : 0;
     
     // Calcular posições X e Y usando funções trigonométricas
     const x = Math.sin(cardAngle) * radius;
